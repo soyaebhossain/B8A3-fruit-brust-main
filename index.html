@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zone</title>
+    <title>Fruit Brust</title>
     <!-- tailwind and daisy ui cdn -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google font Poppins -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        
 
     <!-- tailwind custom classes -->
     <script>
@@ -44,7 +45,7 @@
             <div class="navbar bg-secondary rounded-2xl">
                 <div class="flex-1  ">
                             <div class="navbar-center lg:flex-1">
-                                <ul class="menu text-base menu-horizontal px-1">
+                                <ul class="menu text-base-100 menu-horizontal px-1">
                                     
                                     <li><a>Home</a></li>
                                     <li><a>About Us</a></li>
@@ -53,17 +54,18 @@
                                        
                             </div>
                                 </ul>
-                                                
-                                <div class="flex-1">
-                                     <img src="./images/logo.png" class="w-[50px]"/><a> Biker Zone</a> 
+                                             
+                                <div class="grid grid-flow-col flex-1">
+                                     <img src="./images/logo.png" class="w-[50px] "/>
+                                     <a class="text-5xl mb-12 font-semibold text-base-100"> Fruit Burst</a> 
                                 </div>
                                 
                         </div>
                                         
                                                         
                             <div class="form-control">
-                                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto " />
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                             </div>   
                         
                     </div>
@@ -77,7 +79,7 @@
         <div class="carousel w-full lg:h-[100] bg-bike-primary-bg ">
             <!-- slide 1 -->
             
-            <div id="slide1" class="carousel-item relative w-full ">
+            <div id="slide1" class=" carousel-item relative w-full h-full">
                 <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
                     <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
@@ -154,32 +156,32 @@
             </div>
         </div>  
         <!-- happy fruit -->
-        <section class="my-24">
+        <section class="my-24 absolute left-1/4 top-[95%] ">
             
-            <div class="grid gap-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+            <div class="grid gap-10 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 ">
          <!-- first fruit -->
-                <div class="card bg-base-100 p-9">
+                <div class="card bg-base-100 p-2">
                     <figure><img class="w-36" src="./images/fruit1.png" alt="Shoes" /></figure>
                     <h1 class="text-center">12.90$ - 18.85$</h1>
                 </div>
         <!-- second fruit-->
     
-                <div class="card bg-base-100 p-9 ">
+                <div class="card bg-base-100 p-2 ">
                     <figure><img class="w-36" src="./images/fruit2.png" alt="Shoes" /></figure>
                     <h1 class="text-center">12.90$ - 18.85$</h1>
                 </div>
         <!-- third fruet -->
-                <div class="card bg-base-100 p-9 ">
+                <div class="card bg-base-100 p-2 ">
                     <figure><img class="w-36" src="./images/fruit3.png" alt="Shoes" /></figure>
                     <h1 class="text-center">12.90$ - 18.85$</h1>
                 </div>
         <!-- fourth fruit -->
-                <div class="card bg-base-100 p-9 ">
+                <div class="card bg-base-100 p-2 ">
                     <figure><img class="w-36" src="./images/fruit4.png" alt="Shoes" /></figure>
                     <h1 class="text-center">12.90$ - 18.85$</h1>
                 </div>
         <!-- fiveth fruit -->
-                <div class="card bg-base-100 p-9 ">
+                <div class="card bg-base-100 p-2 ">
                     <figure><img class="w-36" src="./images/fruit5.png" alt="Shoes" /></figure>
                     <h1 class="text-center">12.90$ - 18.85$</h1>
                 </div>
@@ -275,92 +277,78 @@
             </div>
         </section>    
     
-        <!-- featured bike -->
+        <!-- featured fruit -->
         <section>
             <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24">
                 
                 <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
-                    <div class="hero-overlay bg-opacity-60"></div>
-                    <div class="hero-content text-center text-neutral-content">
+                  <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content top-1">
                       <div class="max-w-md">
-                        <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                        <p class="mb-5">We supply highly quality organic products</p>
-                        <button class="btn btn-primary bg-error">Shop Now</button>
+                        <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                        <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                       </div>
                     </div>
-                    <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                    <div class="card  p-240px ">
-                        <figure><img class="w-36" src="./images/member1.png" alt="Shoes" /></figure>
-                        <h1 class="text-center">12.90$ - 18.85$</h1>
-                        <div class="card-body text-center">
-                          <p>Apples</p>
-                            <div class="rating justify-center">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                              </div>
-                          <div class="text-center space-y-4 mt-4">
-                            <h4 class="text-sm font-semibold text-info">Details</h4>
+                  
+                    <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-slate-200 justify-center">
+                      <div class="card  p-5 ">
+                          <figure><img class="w-36" src="./images/member1.png" alt="" /></figure>
+                          <h1 class="text-center">Awlad Hossain</h1>
+                          <div class="card-body text-center">
+                            <p>Fruits Expert</p>
+                            <div class="grid grid-flow-col  gap-2">
+                              <a><img src="./images/facebook 1.svg" alt="" /></a>
+                              <a><img src="./images/twitter 1.svg" alt="" /></a>
+                              <a><img src="./images/instagram 1.svg" alt="" /></a>
+                              
+                            </div>
                             
                           </div>
-                        </div>
-                    </div>
-                    <div class="card  p-9 ">
-                        <figure><img class="w-36" src="./images/member2.png" alt="Shoes" /></figure>
-                        <h1 class="text-center">12.90$ - 18.85$</h1>
-                        <div class="card-body text-center">
-                          <p>Apples</p>
-                            <div class="rating justify-center">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                              </div>
-                          <div class="text-center space-y-4 mt-4">
-                            <h4 class="text-sm font-semibold text-info">Details</h4>
+                      </div>
+                      <div class="card  p-5">
+                          <figure><img class="w-36" src="./images/member2.png" alt="" /></figure>
+                          <h1 class="text-center">Safia Chowdhury</h1>
+                          <div class="card-body text-center">
+                            <p>Fruits Expert</p>
+                            <div class="grid grid-flow-col  gap-2">
+                              <a><img src="./images/facebook 1.svg" alt="" /></a>
+                              <a><img src="./images/twitter 1.svg" alt="" /></a>
+                              <a><img src="./images/instagram 1.svg" alt="" /></a>
+                              
+                            </div>
                             
                           </div>
-                        </div>
-                    </div>
-                    <div class="card p-9 ">
-                        <figure><img class="w-36" src="./images/member3.png" alt="Shoes" /></figure>
-                        <h1 class="text-center">12.90$ - 18.85$</h1>
-                        <div class="card-body text-center">
-                          <p>Apples</p>
-                            <div class="rating justify-center">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                              </div>
-                          <div class="text-center space-y-4 mt-4">
-                            <h4 class="text-sm font-semibold text-info">Details</h4>
-                            
+                      </div>
+                      <div class="card p-5 ">
+                          <figure><img class="w-36" src="./images/member3.png" alt="" /></figure>
+                          <h1 class="text-center">Rokib Hossain</h1>
+                          <div class="card-body text-center">
+                            <p>Fruits Exper</p>
+                            <div class="grid grid-flow-col  gap-2">
+                              <a><img src="./images/facebook 1.svg" alt="" /></a>
+                              <a><img src="./images/twitter 1.svg" alt="" /></a>
+                              <a><img src="./images/instagram 1.svg" alt="" /></a>
+                              
+                            </div>
                           </div>
-                        </div>
-                    </div>
-                    <div class="card  p-9 ">
-                        <figure><img class="w-36" src="./images/member4.png" alt="Shoes" /></figure>
-                        <h1 class="text-center">12.90$ - 18.85$</h1>
-                        <div class="card-body text-center">
-                          <p>Apples</p>
-                            <div class="rating justify-center">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                              </div>
-                          <div class="text-center space-y-4 mt-4">
-                            <h4 class="text-sm font-semibold text-info">Details</h4>
-                        </div>
+                      </div>
+                      <div class="card  p-5 ">
+                          <figure><img class="w-36" src="./images/member4.png" alt="" /></figure>
+                          <h1 class="text-center">Chaity</h1>
+                          <div class="card-body text-center">
+                            <p>Fruits Exper</p>
+                            <div class="grid grid-flow-col  gap-2">
+                              <a><img src="./images/facebook 1.svg" alt="" /></a>
+                              <a><img src="./images/twitter 1.svg" alt="" /></a>
+                              <a><img src="./images/instagram 1.svg" alt="" /></a>
+                              
+                            </div>
+                            </div>
                           </div>
-                        </div>
-                    </div>
+                      </div>
+                  </div>
+                
+                    
                 </div>
             </div>
         </section>
@@ -371,117 +359,68 @@
             <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- first card -->
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/others/latest1.png" alt="Shoes" /></figure>
+                    <figure><img src="/images/others/latest1.png" alt="" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
                             id nisi lectus at.</p>
-                        <div class="card-actions">
-                            <button class="btn text-white bg-bike-primary uppercase">Purchase</button>
-                        </div>
+                        <h2 class="card-title text-3xl">Fresh is Best</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <h2 class="card-title text-3xl">Gift Certificates</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        
                     </div>
                 </div>
                 <!-- second card -->
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/others/latest2.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
-                            id nisi lectus at.</p>
-                        <div class="card-actions">
-                            <button class="btn text-white bg-bike-primary uppercase">Purchase</button>
-                        </div>
-                    </div>
+                    <figure><img src="./images/whychoose1.png" alt="" /></figure>
+                    
                 </div>
                 <!-- third card -->
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="/images/others/latest3.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                <div class="card bg-base-100 shadow-xl text-right">
+                    <figure><img src="/images/others/latest3.png" alt="" /></figure>
+                    <div class="card-body text-right">
+                        <h2 class="card-title text-3xl">Integrated Supplier</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
                             id nisi lectus at.</p>
-                        <div class="card-actions">
-                            <button class="btn text-white bg-bike-primary uppercase">Purchase</button>
-                        </div>
+                        <h2 class="card-title text-3xl">Sustainable Practice</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <h2 class="card-title text-3xl">The Benefits Only</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- FAQ -->
-        <section class="my-24">
-            <h3 class="text-5xl mb-12 font-semibold text-center">Frequently Asked  <span class="text-bike-primary">Questions</span></h3>
-            <div class="hero">
-                <div class="hero-content flex-col lg:gap-24 lg:flex-row">
-                  <img src="/images/others/faq.png" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
-                  <div>
-                    <!-- first question -->
-                    <div class="collapse collapse-arrow ">
-                        <input type="radio" name="my-accordion-2" checked="checked" /> 
-                        <div class="collapse-title text-xl font-medium">
-                            What are the most important things I should
-                            know about riding a bike?
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-arrow ">
-                        <input type="radio" name="my-accordion-2" /> 
-                        <div class="collapse-title text-xl font-medium">
-                            How can I tell if my helmet is old and I need a 
-                            new one?
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-arrow ">
-                        <input type="radio" name="my-accordion-2" /> 
-                        <div class="collapse-title text-xl font-medium">
-                          Click to open this one and close others
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-arrow ">
-                        <input type="radio" name="my-accordion-2" /> 
-                        <div class="collapse-title text-xl font-medium">
-                          Click to open this one and close others
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
-                      <div class="collapse collapse-arrow ">
-                        <input type="radio" name="my-accordion-2" /> 
-                        <div class="collapse-title text-xl font-medium">
-                          Click to open this one and close others
-                        </div>
-                        <div class="collapse-content"> 
-                          <p>hello</p>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-    </main>
-    <footer class="footer p-10 bg-neutral text-neutral-content">
-        <div>
-          
-          <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
-        </div> 
-        <div>
-          <span class="footer-title">Social</span> 
-          <div class="grid grid-cols-1 gap-4">
-            <a><img class="w-36" src="images/others/android.png" alt=""></a> 
-            <a><img class="w-36" src="images/others/ios.png" alt=""></a> 
             
-          </div>
+    </main>
+    <footer class="footer footer-center p-10 bg-neutral-focus text-base-content rounded ">
+      <div class="grid grid-flow-col text-slate-50 gap-4">
+        <img src="./images/logo.png" alt="" />
+        <h1><a class="link link-hover text-5xl mb-12 font-semibold">Fruit Burst</a></h1>
+      </div> 
+      <div class="grid grid-flow-col text-slate-50 gap-4">
+        <a class="link link-hover">Home</a> 
+        <a class="link link-hover">About Us</a> 
+        <a class="link link-hover">Shop</a> 
+        <a class="link link-hover">All Fruits</a>
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">My Account</a>
+      </div> 
+      <div>
+        <div class="grid grid-flow-col  gap-4">
+          <a><img src="./images/twitter 1.svg" alt="" /></a>
+          <a><img src="./images/facebook 1.svg" alt="" /></a>
+          <a><img src="./images/Group 49.svg" alt="" /></a>
+          <a><img src="./images/linkedin 1.svg" alt="" /></a>
+          <a><img src="./images/instagram 1.svg" alt="" /></a>
+          <a><img src="./images/apple 1.svg" alt="" /></a>
         </div>
-      </footer>
+      </div> 
+    </footer>
 </body>
 
 </html>
